@@ -91,9 +91,10 @@ button:hover {
 
 @media (max-width: 600px) {
   body {
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    padding-top: 40px;
+    padding: 10px;
   }
   .card {
     margin-top: 0;
@@ -144,12 +145,6 @@ button:hover {
   position: absolute;
   font-size: 20px;
   animation: floatUp 2s ease-out forwards;
-}
-
-@media (max-width: 600px) {
-  .card {
-    margin-top: 25vh;
-  }
 }
 
 .final-message {
