@@ -13,7 +13,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; /* 🩷 Căn giữa dọc + ngang */
+  align-items: center;
   text-align: center;
   padding: 20px;
 }
@@ -78,14 +78,12 @@ button:hover {
   transition: all 0.3s ease;
 }
 
-/* ✨ Hiệu ứng nút nhấp nháy */
 @keyframes slowPulse {
   0% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.08); opacity: 0.85; }
   100% { transform: scale(1); opacity: 1; }
 }
 
-/* 💫 Hiệu ứng trượt mượt khi thẻ xuất hiện */
 @keyframes floatUp {
   0% { transform: translateY(20px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
@@ -145,7 +143,6 @@ button:hover {
   animation: floatUp 2s ease-out forwards;
 }
 
-/* Căn giữa hơn trên điện thoại */
 @media (max-width: 600px) {
   .card {
     margin-top: 25vh;

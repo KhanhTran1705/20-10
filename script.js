@@ -6,7 +6,7 @@ function typeWriterEffect(text, element, speed = 70, color = "#ff6fb1", delay = 
   setTimeout(() => {
     const span = document.createElement("span");
     span.style.color = color;
-    span.style.display = "block"; // mỗi dòng 1 block => xuống hàng
+    span.style.display = "block";
     span.style.marginTop = "8px";
     element.appendChild(span);
 
@@ -42,14 +42,11 @@ playButton.addEventListener("click", () => {
   for (let i = 0; i < 6; i++) {
     setTimeout(createHeart, i * 300);
   }
-  // Hai dòng chúc 💌
   const line1 = "💖 Chúc em 20/10 🎀";
   const line2 = "Ngập tràn những điều hạnh phúc 💕, luôn vui vẻ 🐱, xinh xắn 🌷, tươi tắn và luôn nở nụ cười xinh tươi trên môi đó nha 🌸😽💕";
 
-  // Gõ dòng 1 (màu hồng đậm)
   typeWriterEffect(line1, message, 70, "#ff6fb1");
 
-  // Gõ dòng 2 (màu tím pastel), bắt đầu sau khi dòng 1 gõ xong
   typeWriterEffect(line2, message, 60, "#b488f1", line1.length * 70 + 500);
 
   setTimeout(() => {
