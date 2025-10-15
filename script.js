@@ -22,6 +22,6 @@ playButton.addEventListener("click", () => {
   playButton.disabled = true;
   playButton.style.opacity = 0.6;
 
-  const text = "💖 Chúc em 20/10 🎀 ngập tràn những điều hạnh phúc 💕, luôn vui vẻ 🐱, xinh xắn 🌷, tươi tắn và luôn nở nụ cười xinh tươi trên môi đó nha 🌸😽💕";
+  const text = "💖 Chúc em 20/10 🎀 \nNgập tràn những điều hạnh phúc 💕, luôn vui vẻ 🐱, xinh xắn 🌷, tươi tắn và luôn nở nụ cười xinh tươi trên môi đó nha 🌸😽💕";
   typeWriterEffect(text, message, 70); // 70ms = tốc độ mỗi ký tự
 });
