@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(180deg, #fff0f5, #ffeef2);
+  color: #444;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 🩷 Căn giữa dọc + ngang */
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  max-width: 380px;
+  width: 100%;
+  animation: floatUp 0.8s ease-out;
+}
+
+.cat {
+  width: 160px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #ff5c8a;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #ff80ab;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  animation: slowPulse 2.5s ease-in-out infinite;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff4081;
+}
+
+#message {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #ff4081;
+  font-weight: 600;
+  min-height: 60px;
+  transition: all 0.3s ease;
+}
+
+/* ✨ Hiệu ứng nút nhấp nháy */
+@keyframes slowPulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.85; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* 💫 Hiệu ứng trượt mượt khi thẻ xuất hiện */
+@keyframes floatUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* 📱 Responsive đẹp hơn cho điện thoại nhỏ */
+@media (max-width: 400px) {
+  .card {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  p, #message {
+    font-size: 15px;
+  }
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
