@@ -70,6 +70,7 @@ button:hover {
 }
 
 #message {
+  white-space: pre-line;
   margin-top: 18px;
   font-size: 18px;
   color: #ff4081;
