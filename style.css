@@ -89,10 +89,14 @@ button:hover {
   100% { transform: translateY(0); opacity: 1; }
 }
 
-/* 📱 Responsive đẹp hơn cho điện thoại nhỏ */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 40px;
+  }
   .card {
-    padding: 20px;
+    margin-top: 0;
   }
   h1 {
     font-size: 20px;
@@ -125,7 +129,6 @@ button:hover {
   to { text-shadow: 0 0 15px rgba(255, 182, 193, 0.8); }
 }
 
-/* Hiệu ứng trái tim bay */
 @keyframes floatUp {
   0% {
     transform: translateY(0) scale(0.8);
@@ -164,27 +167,4 @@ button:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Hiệu ứng trái tim bay */
-@keyframes floatUp {
-  0% {
-    transform: translateY(0) scale(0.8);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100px) scale(1.2);
-    opacity: 0;
-  }
-}
 
-.heart {
-  position: absolute;
-  font-size: 20px;
-  animation: floatUp 2s ease-out forwards;
-}
-
-/* Căn giữa hơn trên điện thoại */
-@media (max-width: 600px) {
-  .card {
-    margin-top: 25vh;
-  }
-}
