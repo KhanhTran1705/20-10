@@ -36,8 +36,11 @@ function createHeart() {
 
 playButton.addEventListener("click", () => {
   audio.play();
+  playButton.textContent = "🎵🎶🎵🎶🎵";
   playButton.disabled = true;
-  playButton.style.opacity = 0.6;
+  playButton.style.backgroundColor = "#f9bcd0";
+  playButton.style.opacity = 0.8;
+  playButton.style.cursor = "default";
 
   for (let i = 0; i < 6; i++) {
     setTimeout(createHeart, i * 300);
