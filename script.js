@@ -42,7 +42,7 @@ playButton.addEventListener("click", () => {
   playButton.style.opacity = 0.8;
   playButton.style.cursor = "default";
 
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 10; i++) {
     setTimeout(createHeart, i * 300);
   }
   const line1 = "💖 Chúc em 20/10 🎀";
@@ -54,7 +54,7 @@ playButton.addEventListener("click", () => {
 
   setTimeout(() => {
   const finalMsg = document.createElement("p");
-  finalMsg.textContent = "💗 Anh chúc cô chủ quán của anh có một ngày 20/10 thật đặc biệt 💗";
+  finalMsg.textContent = "💗 Anh chúc cô chủ nhỏ của anh có một ngày 20/10 thật đặc biệt 💗";
   finalMsg.classList.add("final-message");
   message.appendChild(finalMsg);
 }, 13000);
